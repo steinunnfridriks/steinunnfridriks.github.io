@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Steinunn Rut Friðriksdóttir — Publications & CV</title>
+  <meta name="description" content="Publications and CV for Steinunn Rut Friðriksdóttir" />
+  <link rel="icon" href="data:," />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #0f172a; /* slate-900 */
+      --muted: #475569; /* slate-600 */
+      --card: #f8fafc; /* slate-50 */
+      --accent: #2563eb; /* blue-600 */
+      --ring: rgba(37,99,235,0.35);
+      --border: #e2e8f0; /* slate-200 */
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1220;
+        --fg: #e5e7eb;
+        --muted: #94a3b8;
+        --card: #0f172a;
+        --accent: #60a5fa;
+        --ring: rgba(96,165,250,0.35);
+        --border: #1f2937;
+      }
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--fg);
+    }
+    .container { max-width: 880px; padding: 24px; margin: 0 auto; }
+    header {
+      display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+      padding: 24px; border: 1px solid var(--border); border-radius: 16px; background: var(--card);
+    }
+    .id {
+      display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: center;
+    }
+    .avatar {
+        display: none;
+    }
+      .avatar-img {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: inline-block;
+        border: 2px solid var(--border);
+        background: var(--card);
+      }
+      .avatar-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    .name { font-size: 1.6rem; font-weight: 700; margin: 0; }
+    .meta { color: var(--muted); margin-top: 2px; }
+    nav a, .btn {
+      display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border: 1px solid var(--border);
+      border-radius: 12px; text-decoration: none; color: var(--fg); background: transparent;
+    }
+    .btn.primary { border-color: var(--accent); box-shadow: 0 0 0 0px var(--ring); }
+    .btn.primary:hover { box-shadow: 0 0 0 4px var(--ring); }
+    section { margin-top: 28px; }
+    h2 { font-size: 1.2rem; margin: 0 0 12px; }
+    .card { border: 1px solid var(--border); border-radius: 16px; background: var(--card); padding: 20px; }
+    .pub { padding: 14px 0; border-top: 1px dashed var(--border); }
+    .pub:first-child { border-top: 0; }
+    .pub-title { font-weight: 600; margin: 0 0 6px; }
+    .pub-meta { color: var(--muted); font-size: 0.95rem; margin-bottom: 6px; }
+    .pub-links a { margin-right: 12px; font-size: 0.95rem; color: var(--accent); text-decoration: none; }
+    .pub-badge { font-size: 0.78rem; padding: 3px 8px; border: 1px solid var(--border); border-radius: 999px; margin-left: 8px; color: var(--muted); }
+    footer { color: var(--muted); font-size: 0.9rem; margin: 32px 0; text-align: center; }
+    .search {
+      display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0 12px;
+    }
+    input[type="search"], select {
+      padding: 10px 12px; border-radius: 12px; border: 1px solid var(--border); background: transparent; color: var(--fg);
+    }
+    input[type="search"]{ flex: 1 1 260px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="id">
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <span class="avatar-img">
+              <img src="headshot.jpg" alt="Portrait of Steinunn Rut Friðriksdóttir" />
+            </span>
+            <span>
+              <h1 class="name" style="margin-bottom: 2px;">Steinunn Rut Friðriksdóttir</h1>
+              <div class="meta">PhD Candidate · University of Iceland · <a href="mailto:srf2@hi.is" style="color:var(--accent)">srf2@hi.is</a></div>
+            </span>
+          </div>
+      </div>
+      <nav>
+        <a class="btn" href="#publications">Publications</a>
+        <a class="btn" href="#resources">Resources</a>        
+        <a class="btn primary" href="cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <div class="card">
+        <h2>About</h2>
+        <p>A PhD student in computer science with an emphasis on Icelandic language technology (or Natural Language Processing). My areas of interest primarily lie in the interdisciplinary context of language technology, encompassing data science, artificial intelligence, and linguistics, while also extending into various other fields, such as medicine, philosophy, and sociology. My research is on bias detection, with a two-fold goal. Firstly, to research the manifestations of prejudice in the output of large language models that include Icelandic, i.e. how the biases of society are transmitted to the decision making of AI models, and secondly, to explore whether these models can be used to investigate the presence of prejudice in Icelandic texts.</p>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="card">
+        <h2>Publications</h2>
+        <div class="search" role="search">
+          <label class="sr-only" for="q">Filter publications</label>
+          <input id="q" type="search" placeholder="Filter by title, author, or venue…" />
+          <label class="sr-only" for="year">Year</label>
+          <select id="year"><option value="">All years</option></select>
+        </div>
+        <div id="pub-list" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="resources">
+      <div class="card">
+        <h2>Resources</h2>
+        <ul id="res-list"></ul>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const PUBLICATIONS = [
+      { title: "Hotter and Colder: A New Approach to Annotating Sentiment, Emotions, and Bias in Icelandic Blog Comments", authors: ["Steinunn Rut Friðriksdóttir", "Dan Saattrup Nielsen", "Hafsteinn Einarsson"], venue: "NoDaLiDa/Baltic-HLT", year: 2025, links: { pdf: "https://arxiv.org/abs/2502.16987" } },
+      { title: "The GenderQueer test suite", authors: ["Steinunn Rut Friðriksdóttir"], venue: "The Ninth Conference on Machine Translation (WMT)", year: 2024, links: { pdf: "https://aclanthology.org/2024.wmt-1.26.pdf"} },
+      { title: "Ice and Fire: Dataset on sentiment, emotions, toxicity, sarcasm, hate speech, sympathy and more in Icelandic blog comments", authors: ["Steinunn Rut Friðriksdóttir", "Annika Simonsen", "Atli Snær Ásmundsson", "Guðrún Lilja Friðjónsdóttir", "Anton Karl Ingason", "Vésteinn Snæbjarnarson", "Hafsteinn Einarsson"], venue: "Threat, Aggression & Cyberbullying Workshop @ LREC-COLING", year: 2024, links: { pdf: "https://aclanthology.org/2024.trac-1.9.pdf"}},
+      { title: "Malmon: A Crowd-Sourcing Platform for Simple Language", authors: ["Helgi Björn Hjartarson", "Steinunn Rut Friðriksdóttir"], venue: "READI Workshop @ LREC-COLING", year: 2024, links: { pdf: "https://aclanthology.org/2024.readi-1.2.pdf"}},
+      { title: "Gendered grammar or ingrained bias? Exploring gender bias in Icelandic language models", authors: ["Steinunn Rut Friðriksdóttir", "Hafsteinn Einarsson"], venue: "LREC-COLING", year: 2024, links: { pdf: "https://aclanthology.org/2024.lrec-main.671.pdf"}},
+      { title: "The Effect of Data Encoding on Relation Triplet Identification", authors: ["Steinunn Rut Friðriksdóttir", "Hafsteinn Einarsson"], venue: "NoDaLiDa", year: 2023, links: { pdf: "https://aclanthology.org/2023.nodalida-1.50.pdf"} },
+      { title: "Bootstrapping Icelandic Knowledge Graph Data", authors: ["Steinunn Rut Friðriksdóttir", "Hafsteinn Einarsson"], venue: "ESSLLI", year: 2022, links: { pdf: "https://uvaauas.figshare.com/articles/conference_contribution/Fri_riksd_ttir_Einarsson_2022_Bootstrapping_Icelandic_Knowledge_Graph_Data/20367948"}},
+      { title: "Building an Icelandic entity linking corpus", authors: ["Steinunn Rut Friðriksdóttir", "Valdimar Ágúst Eggertsson", "Benedikt Geir Jóhannesson", "Hjalti Daníelsson", "Hrafn Loftsson", "Hafsteinn Einarsson"], venue: "Workshop on Dataset Creation for Lower-Resourced Languages @ LREC", year: 2022, links: { pdf: "https://arxiv.org/abs/2206.05014" } },
+      { title: "Fictionary-Based Games for Language Resource Creation", authors: ["Steinunn Rut Friðriksdóttir", "Hafsteinn Einarsson"], venue: "2nd Workshop on Novel Incentives in Data Collection from People: models, implementations, challenges and results @ LREC", year: 2022, year: 2022, links: { pdf: "https://aclanthology.org/2022.nidcp-1.5.pdf" } },
+      { title: "IceBATS: An Icelandic adaptation of the bigger analogy test set", authors: ["Steinunn Rut Friðriksdóttir", "Hjalti Daníelsson", "Steinþór Steingrímsson", "Einar Sigurðsson"], venue: "LREC", year: 2022, links: { pdf: "https://aclanthology.org/2022.lrec-1.449.pdf" }},
+      { title: "ALEXIA: A Lexicon Acquisition Tool", authors: ["Steinunn Rut Friðriksdóttir", "Atli Jasonarson", "Steinþór Steingrímsson", "Einar Freyr Sigurðsson"], venue: "CLARIN Annual Conference", year: 2021, links: { pdf: "https://steinst.is/files/2021_alexia.pdf" }},
+      { title: "Disambiguating confusion sets as an aid for dyslexic spelling", authors: ["Steinunn Rut Friðriksdóttir", "Anton Karl Ingason"], venue: "1st Workshop on Tools and Resources to Empower People with REAding DIfficulties (READI) @ LREC", year: 2020, links: { pdf: "https://aclanthology.org/2020.readi-1.1.pdf" }},
+      { title: "Disambiguating Confusion Sets in a Language with Rich Morphology", authors: ["Steinunn Rut Friðriksdóttir", "Anton Karl Ingason"], venue: "ICAART", year: 2020, links: { pdf: "https://www.scitepress.org/Papers/2020/93715/93715.pdf" }},      
+    ];
+
+    const RESOURCES = [
+      { name: "IceBERTBias", description: "A fine-tuned version of IceBERT for Named Entity Recognition to identify bias in Icelandic text.", link: "https://huggingface.co/steinunnfridriks/IceBERTBias"},
+      { name: "mBERTBiasIce", description: "A fine-tuned version of mBERT for Named Entity Recognition to identify bias in Icelandic text.", link: "https://huggingface.co/steinunnfridriks/mBERTBiasIce"},
+      { name: "ScandiBERTBias", description: "A fine-tuned version of ScandiBERT for Named Entity Recognition to identify bias in Icelandic text.", link: "https://huggingface.co/steinunnfridriks/ScandiBERTBias"},
+      { name: "IceBias", description: "A lexicon of Icelandic bias and toxicity.", link: "https://huggingface.co/datasets/steinunnfridriks/IceBias"},
+      { name: "IceBiasNER", description: "A NER-tagged Icelandic bias and toxicity dataset.", link: "https://huggingface.co/datasets/steinunnfridriks/IceBiasNER"},
+      { name: "Inappropriate Word Highlighter", description: "A prototype web tool that detects biased or harmful language in Icelandic text.", link: "https://github.com/steinunnfridriks/InappropriateWordHighlighter"},
+      { name: "The GenderQueer Test Suite", description: "An evaluation set to assess machine translation systems' capabilities in handling queer-inclusive and gender diverse content.", link: "https://github.com/steinunnfridriks/TheGenderQueerTestSuite"},
+      { name: "Named Entity Recognition for Bias Detection in Icelandic", description: "All code to train the bias detection models mentioned above.", link: "https://github.com/steinunnfridriks/NERBiasIce"},
+      { name: "Icelandic Sentiment Corpus (Hotter and Colder)", description: "Sentiment, emotions, toxicity, sarcasm, hate speech, sympathy and more in Icelandic blog comments.", link: "http://hdl.handle.net/20.500.12537/352"},
+      { name: "CEFR classifier for Icelandic", description: "Data and a prototype classifier to automatically detect CEFR levels in Icelandic text.", link: "https://github.com/steinunnfridriks/CEFR_firstlanguage_classification"},
+      { name: "IceBATS", description: "Icelandic Bigger Analogy Test Set.", link: "http://hdl.handle.net/20.500.12537/120"},
+      { name: "Word Embeddings", description: "FastText optimized for IceBATS 22.04.", link: "http://hdl.handle.net/20.500.12537/211"},
+      { name: "MIM-GOLD-EL", description: "Entity linking corpus for Icelandic (22.01).", link: "http://hdl.handle.net/20.500.12537/168"},
+      { name: "Stop-words for the Icelandic Gigaword Corpus", description: "Approximately 60,000 stop-words, including typos and foreign words.", link: "http://hdl.handle.net/20.500.12537/124"},
+      { name: "Icelandic Multi-SimLex", description: "Word similarity dataset for Icelandic.", link: "http://hdl.handle.net/20.500.12537/121" },
+      { name: "ALEXIA", description: "Lexicon acquisition tool for Icelandic.", link: "http://hdl.handle.net/20.500.12537/95" },
+      { name: "The Icelandic Confusion Set Corpus", description: "A dataset of Icelandic homophones.", link: "https://github.com/steinunnfridriks/ICoSC" }
+    ];
+
+    const pubList = document.getElementById('pub-list');
+    const qInput = document.getElementById('q');
+    const yearSelect = document.getElementById('year');
+    const years = Array.from(new Set(PUBLICATIONS.map(p => p.year))).sort((a,b)=>b-a);
+    years.forEach(y => { const o=document.createElement('option'); o.value=y; o.textContent=y; yearSelect.appendChild(o); });
+
+    function scholarLinkFor(title){
+      return `https://scholar.google.com/scholar?q=${encodeURIComponent(title)}`;
+    }
+
+    function render(list){
+      pubList.innerHTML='';
+      list.sort((a,b)=> b.year - a.year || a.title.localeCompare(b.title));
+      list.forEach(p => {
+        const item=document.createElement('article'); item.className='pub';
+        const title=document.createElement('h3'); title.className='pub-title'; title.textContent=p.title;
+        const meta=document.createElement('div'); meta.className='pub-meta'; meta.textContent=`${p.authors.join(', ')} · ${p.venue} · ${p.year}`;
+        const links=document.createElement('div'); links.className='pub-links';
+        // Add PDF/DOI/Code links if provided
+        if(p.links){
+          for(const [k,v] of Object.entries(p.links)){
+            const a=document.createElement('a'); a.href=v; a.target='_blank'; a.rel='noopener'; a.textContent=k.toUpperCase(); links.appendChild(a);
+          }
+        }
+        // Always provide a Scholar search link as a fallback
+        const sch=document.createElement('a'); sch.href=scholarLinkFor(p.title); sch.target='_blank'; sch.rel='noopener'; sch.textContent='SCHOLAR'; links.appendChild(sch);
+
+        item.appendChild(title); item.appendChild(meta); item.appendChild(links);
+        pubList.appendChild(item);
+      });
+      if(!list.length){ pubList.innerHTML='<p class="pub-meta">No publications match your filter.</p>'; }
+    }
+
+    function applyFilter(){
+      const q=qInput.value.trim().toLowerCase();
+      const y=yearSelect.value;
+      const filtered=PUBLICATIONS.filter(p=>{
+        const hay=[p.title,p.venue,...p.authors].join(' ').toLowerCase();
+        const matchQ=q?hay.includes(q):true;
+        const matchY=y?String(p.year)===y:true;
+        return matchQ&&matchY;
+      });
+      render(filtered);
+    }
+
+    qInput.addEventListener('input', applyFilter);
+    yearSelect.addEventListener('change', applyFilter);
+
+    render(PUBLICATIONS);
+
+    // Render resources
+    const resList=document.getElementById('res-list');
+    RESOURCES.forEach(r=>{
+      const li=document.createElement('li');
+      li.innerHTML=`<strong><a href="${r.link}" target="_blank" rel="noopener">${r.name}</a></strong>: ${r.description}`;
+      resList.appendChild(li);
+    });
+
+    document.getElementById('yearNow').textContent=new Date().getFullYear();
+  </script>
+</body>
+<<<<<<< HEAD
+</html>
+=======
+</html>
+>>>>>>> 30ad75e4a732ab82220361b472ea80730e74d57a
